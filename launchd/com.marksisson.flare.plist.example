@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.marksisson.flare</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/YOU/.nix-profile/bin/flare</string>
+  </array>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>CLOUDFLARE_API_TOKEN_FILE</key>
+    <string>/Users/YOU/.config/flare/cloudflare-api-token</string>
+    <key>CLOUDFLARE_ZONE_ID</key>
+    <string>YOUR_ZONE_ID</string>
+    <key>FLARE_RECORD_NAME</key>
+    <string>home.example.com</string>
+  </dict>
+
+  <key>RunAtLoad</key>
+  <true/>
+  <key>StartInterval</key>
+  <integer>300</integer>
+
+  <key>StandardOutPath</key>
+  <string>/Users/YOU/Library/Logs/flare.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/YOU/Library/Logs/flare.error.log</string>
+</dict>
+</plist>
